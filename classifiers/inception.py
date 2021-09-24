@@ -147,7 +147,7 @@ class Classifier_INCEPTION:
         keras.backend.clear_session()
 
         return df_metrics
-#Prediciting the result
+    #Prediciting the result
     def predict(self, x_test, y_true, x_train, y_train, y_test, return_df_metrics=True):
         start_time = time.time()
         model_path = self.output_directory + 'best_model.hdf5'
